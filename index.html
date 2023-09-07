@@ -10,26 +10,44 @@
         }
         h1 {
             color: green;
+            margin-left: 10px;
         }
         h2 {
             color: green;
             margin-top: 20px;
         }
         p, ul {
-            margin-left: 50px;
-            margin-right: 50px;
+            margin-left: 10px;
+            margin-right: 10px;
         }
         footer {
             text-align: center;
             font-style: italic;
             margin-top: 20px;
         }
-        /* Media query pre väčšie obrazovky */
-        @media (min-width: 768px) {
-            p, ul {
-                margin-left: 50px;
-                margin-right: 50px;
+        /* Media query pre obrazovky od 768px do 1366px */
+        @media (min-width: 768px) and (max-width: 1366px) {
+            h1, h2 {
+                margin-left: 100px;
+                margin-right: 100px;
             }
+            p, ul {
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+        }
+
+        /* Media query pre obrazovky nad 1366px */
+        @media (min-width: 1367px) {
+            h1, h2 {
+                margin-left: 200px;
+                margin-right: 200px;
+            }
+            p, ul {
+                margin-left: 200px;
+                margin-right: 200px;
+            }
+        }
     </style>
 </head>
 <body>
