@@ -6,6 +6,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 10px;
+            text-align: justify; /* Zarovnanie textu na ľavo aj napravo */
         }
         h1 {
             color: green;
@@ -23,6 +24,12 @@
             font-style: italic;
             margin-top: 20px;
         }
+        /* Media query pre väčšie obrazovky */
+        @media (min-width: 768px) {
+            p, ul {
+                margin-left: 50px;
+                margin-right: 50px;
+            }
     </style>
 </head>
 <body>
