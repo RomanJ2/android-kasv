@@ -30,6 +30,11 @@
             padding-top: 20px;
             margin-top: 40px;
         }
+        /* Štýl pre odpočítavanie */
+        span.countdown {
+            font-weight: bold;
+            color: red; /* Zmeňte farbu podľa vašich preferencií */
+        }
         /* Media query pre obrazovky od 768px do 1366px */
         @media (min-width: 768px) and (max-width: 1366px) {
             h1, h2 {
@@ -70,12 +75,12 @@
     <h2>1. polrok</h2>
     <p>Požiadavka na minimálne hodnotenie, t.j. iné ako známka 5 - prezentácia priradenej témy.</p>
     <ul>
-        <li>[zadanie] 3. november: predstavenie témy projektu a základnej funkcionality. <span id="countdown1"></span></li>
-        <li>[prezentacia] 24. november: prezentovanie prehľadovej témy <span id="countdown2"></span></li>
-        <li>[zadanie] 1. december: predstavenie návrhu UI/UX vašej aplikácie - Figma, resp. v nejakom inom programe. <span id="countdown3"></span></li>
+        <li>[zadanie] 3. november: predstavenie témy projektu a základnej funkcionality. <span id="countdown1" class="countdown"></span></li>
+        <li>[prezentacia] 24. november: prezentovanie prehľadovej témy <span id="countdown2" class="countdown"></span></li>
+        <li>[zadanie] 1. december: predstavenie návrhu UI/UX vašej aplikácie - Figma, resp. v nejakom inom programe. <span id="countdown3" class="countdown"></span></li>
         <li>[zadanie] 5. január - prezentovanie aktuálneho stavu aplikácií - pre udelenie známky za 1. polrok. Ak by to časovo nevyšlo priamo na hodine príp. pre iné dôvody, pošlete mi video. Teda prezentovanie pozostáva z troch častí:
-            <span id="countdown4"></span>
-        </li>  
+            <span id="countdown4" class="countdown"></span>
+        </li> 
             <ul style="margin-left: 10px;">
                 <li>kód dostupný v gitlabe</li>
                 <li>ukážka - buď live na hodine alebo natočenie krátkeho videa, kde ukážete ako aplikácia funguje</li>
